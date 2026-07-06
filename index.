@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Beautiful Da Nang</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Yêu cầu: Skip to main content link -->
+    <a class="skip-link" href="#main-content">Skip to Main Content</a>
+
+    <header>
+        <h1>Welcome to Da Nang City</h1>
+        <!-- Yêu cầu: Navigation Bar -->
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Thẻ main được liên kết với skip-link phía trên -->
+    <main id="main-content">
+        <section class="intro">
+            <h2>About the City</h2>
+            <p>Da Nang is a beautiful coastal city in central Vietnam known for its sandy beaches and history.</p>
+        </section>
+
+        <!-- Yêu cầu: Vùng Grid chứa ảnh (Ít nhất 2 cột) -->
+        <section class="grid-container">
+            <div class="grid-item">
+                <img src="https://picsum.photos/300/200?random=1" alt="Dragon Bridge in Da Nang">
+                <p>The famous Dragon Bridge.</p>
+            </div>
+            <div class="grid-item">
+                <img src="https://picsum.photos/300/200?random=2" alt="My Khe Beach in the morning">
+                <p>Beautiful My Khe Beach.</p>
+            </div>
+            <div class="grid-item">
+                <img src="https://picsum.photos/300/200?random=3" alt="Marble Mountains view">
+                <p>The Marble Mountains.</p>
+            </div>
+            <div class="grid-item">
+                <img src="https://picsum.photos/300/200?random=4" alt="Ba Na Hills French Village">
+                <p>The stunning Ba Na Hills.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Designed by Tran Cong Binh.</p>
+    </footer>
+
+</body>
+</html>
