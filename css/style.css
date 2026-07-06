@@ -1,0 +1,99 @@
+/* --- Thiết lập chung --- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8fafc;
+    color: #0f172a;
+}
+
+/* --- Yêu cầu: Skip to Main Content Link (Chỉ hiện khi focus) --- */
+.skip-link {
+    position: absolute;
+    top: -100px; /* Đẩy link lên trên khuất khỏi màn hình */
+    left: 10px;
+    background-color: #1e40af;
+    color: #ffffff;
+    padding: 10px;
+    z-index: 100;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.skip-link:focus {
+    top: 10px; /* Khi nhấn phím Tab, vị trí dịch xuống để hiển thị rõ */
+}
+
+/* --- Yêu cầu: Style Navigation với Flexbox --- */
+header {
+    background-color: #1e3a8a;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;          /* Bật Flexbox */
+    justify-content: center; /* Căn giữa các mục menu */
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    gap: 20px;              /* Tạo khoảng cách giữa các mục menu */
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+/* --- Yêu cầu: Hover Pseudo-class tạo hiệu ứng đổi màu chữ mượt mà --- */
+.nav-links a:hover {
+    color: #bfdbfe;
+    text-decoration: underline;
+    transition: color 0.3s ease; /* Hiệu ứng chuyển màu mượt */
+}
+
+/* --- Yêu cầu: Style bố cục bằng Grid Property (2 cột trở lên) --- */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Chia đều làm 2 cột */
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #e2e8f0;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* --- Yêu cầu: Style hình ảnh bằng Box Model (border, padding, border-radius) --- */
+img {
+    max-width: 100%;
+    height: auto;
+    border: 4px solid #3b82f6; /* Thuộc tính border */
+    padding: 8px;              /* Thuộc tính padding */
+    border-radius: 8px;        /* Thuộc tính border-radius mặc định */
+}
+
+/* --- Yêu cầu: Áp dụng nâng cao với bộ chọn :nth-child --- */
+/* Định dạng riêng cho các ảnh ở vị trí chẵn (ảnh số 2, số 4) sẽ có bo tròn góc mạnh hơn */
+.grid-item:nth-child(even) img {
+    border-color: #ef4444;       /* Đổi sang viền màu đỏ cho ảnh chẵn */
+    border-radius: 50px 0 50px 0; /* Tạo hiệu ứng bo góc so le đặc biệt */
+}
+
+footer {
+    background-color: #0f172a;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
